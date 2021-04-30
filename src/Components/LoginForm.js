@@ -22,7 +22,7 @@ const LoginForm = () => {
       window.location.reload();
       setError('');
     } catch (err) {
-      setError('Oops, incorrect credentials.');
+      setError('Oops, incorrect credentials, enter placeholder username.');
     }
   };
 
