@@ -29,12 +29,14 @@ const LoginForm = () => {
   return (
     <div className="wrapper">
       <div className="form">
-        <h1 className="title">Chat Application</h1>
+        <h1 className="title">Chat Room</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" 
           value={username} onChange={(e) =>
-           setUsername(e.target.value)} className="input" placeholder="Username :user1,user2" required />
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password : 123 /1234" required />
+           setUsername(e.target.value)} className="input" 
+           placeholder="admin/user2/user3" required />
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input"
+           placeholder="123 /1234" required />
           <div align="center">
             <button type="submit" className="button">
               <span>Start chatting</span>
