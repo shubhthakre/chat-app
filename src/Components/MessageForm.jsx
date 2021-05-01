@@ -29,6 +29,7 @@ const MessageForm = (props) => {
   };
 
   return (
+    <div className="message-form-container">
     <form className="message-form" onSubmit={handleSubmit}>
       <input
         className="message-input"
@@ -53,7 +54,9 @@ const MessageForm = (props) => {
         <SendOutlined className="send-icon" />
       </button>
     </form>
+    </div>
   );
+  
 };
 
 export default MessageForm;
