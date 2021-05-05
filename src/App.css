@@ -5,6 +5,25 @@
       Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     letter-spacing: 0.5px;
   }
+
+  :root {
+    --blue : rgb(26,57,87);
+    --white : rgb (236,236,236);
+   }
+   body.light{
+     --background-color : var(--white);
+     --text-color : var(--blue);
+     --font-weight:400;
+     /* --img:url("./moon.png"); */
+   }
+   
+   body.dark{
+     --background-color : var(--blue);
+     --text-color : var(--white);
+     --font-weight:500;
+     /* --img:url(""); */
+   
+   }
   
   .ce-chat-list {
     background-color: rgb(240, 240, 240) !important;
@@ -295,4 +314,24 @@
     color: white;
     text-align: center;
     margin-top: 20px;
+  }
+
+  .navbar{
+    width:100vw;
+    height:30px;
+    position:static ;
+    background-color: #7554a0;
+
+  }
+
+  .btn{
+    height:30px;
+    width: 100px;
+    margin-left:86vw;
+    background-color:rgb(30, 210, 90);
+    display: inline-block;
+    font-size: 16px;
+    
+
+  
   }
